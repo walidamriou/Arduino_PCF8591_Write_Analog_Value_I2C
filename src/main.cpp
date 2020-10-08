@@ -6,26 +6,27 @@
 
  */
 #include "Arduino.h"
+
 #include "PCF8591.h"
 #define PCF8591_I2C_ADDRESS 0x48
 
 PCF8591 pcf8591(PCF8591_I2C_ADDRESS);
-float volatge_valure=2.7;
+float volatge_valure=3.3;
 
 void setup()
 {
 	Serial.begin(115200);
 	pcf8591.begin();
+  pcf8591.voltageWrite(volatge_valure); // 2.7Volts output
 }
 
 void loop()
 {
   if (Serial.available() > 0) {
-    // read the incoming byte:
-    volatge_valure = Serial.read();
+    volatge_valure = Serial.parseFloat();
   }
-	pcf8591.voltageWrite(volatge_valure); // 2.7Volts output
-	//delay(20);
+  pcf8591.voltageWrite(volatge_valure); // 2.7Volts output
+
 }
 
  
