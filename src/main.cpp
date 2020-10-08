@@ -24,6 +24,7 @@ void loop()
 {
   if (Serial.available() > 0) {
     volatge_valure = Serial.parseFloat();
+    delay(3000);
   }
   pcf8591.voltageWrite(volatge_valure); // 2.7Volts output
 
