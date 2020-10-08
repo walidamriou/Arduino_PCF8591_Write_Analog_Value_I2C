@@ -25,6 +25,7 @@ void loop()
     volatge_valure = Serial.read();
   }
 	pcf8591.voltageWrite(volatge_valure); // 2.7Volts output
-	delay(3000);
-
+	//delay(20);
 }
+
+ 
