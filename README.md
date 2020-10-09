@@ -4,7 +4,14 @@ Specific value Voltage generator by PCF8591 module for Arduino boards.
 Input your a specific value in Serial monitor of Arduino IDE between 0.00 <value<5.00 ; for example 0.01 or 3.75   
 
 __Note__: If you want to flash the code to your Arduino board by Arduino IDE, move the code inside /src/main.cpp  to the main code of your Arduino IDE project and install the library inside /lib to your Arduino IDE, then build & upload. 
-
+### Connection
+| Arduino board (UNO) | PCF8591 Module   |
+|---|---|
+| 5V  | VCC   |
+| GND  | GND  |
+| A4 (SDA)  | SDA |
+| A5 (SCL) | SCL| 
+ 
 ### If you need any help or information:
 :large_blue_circle:	 Facebook: https://www.facebook.com/walidamriou   
 :large_blue_circle:  Twitter: https://twitter.com/walidamriou    
