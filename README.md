@@ -1,9 +1,17 @@
 # Arduino_PCF8591_Write_Analog_Value_I2C
 
 Specific value Voltage generator by PCF8591 module for Arduino boards.   
-Input your a specific value in Serial monitor of Arduino IDE between 0.00 <value<5.00 ; for example 0.01 or 3.75   
 
-__Note__: If you want to flash the code to your Arduino board by Arduino IDE, move the code inside /src/main.cpp  to the main code of your Arduino IDE project and install the library inside /lib to your Arduino IDE, then build & upload. 
+#### How to use it
+1. Open the project by __platformio__ (platformio.org)
+2. Build and upload the project to your arduino board
+3. make connection between your Arduino board and PCF8591 module
+4. Input your a specific value in Serial monitor of Arduino IDE between 0.00 <value<5.00 ; for example 0.01 or 3.75
+
+#### Arduino IDE users
+
+If you want to flash the code to your Arduino board by Arduino IDE, move the code inside /src/main.cpp  to the main code of your Arduino IDE project (.ino) and install the library inside /lib (PCF8591.zip) to your Arduino IDE, then build & upload. 
+
 ### Connection
 | Arduino board (UNO) | PCF8591 Module   |
 |---|---|
