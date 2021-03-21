@@ -7,6 +7,7 @@ Specific value Voltage generator by PCF8591 module for Arduino boards.
 2. Build and upload the project to your arduino board
 3. make connection between your Arduino board and PCF8591 module
 4. Input your a specific value in Serial monitor of Arduino IDE between 0.00 <value<5.00 ; for example 0.01 or 3.75
+5. You will see the voltage output on the pin __AOUT__ of PCF8591
 
 #### Arduino IDE users
 
@@ -20,6 +21,9 @@ If you want to flash the code to your Arduino board by Arduino IDE, move the cod
 | A4 (SDA)  | SDA |
 | A5 (SCL) | SCL| 
  
+### More info
+See /Resources
+
 ### If you need any help or information:
 :large_blue_circle:	 Facebook: https://www.facebook.com/walidamriou   
 :large_blue_circle:  Twitter: https://twitter.com/walidamriou    
