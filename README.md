@@ -3,14 +3,23 @@
 Specific value Voltage generator by PCF8591 module for Arduino boards.   
 
 #### How to use it
+
+##### If you use platformio IDE
+
 1. Open the project by __platformio__ (platformio.org)
 2. Build and upload the project to your arduino board
 3. make connection between your Arduino board and PCF8591 module
 4. Input your a specific value in Serial monitor of Arduino IDE between 0.00 <value<5.00 ; for example 0.01 or 3.75
 5. You will see the voltage output on the pin __AOUT__ of PCF8591
+
 ##### If you use Arduino IDE
+
 1. Use/install the library in /lib (PCF8591.zip)
 2. Move the code from /src/main.cpp to your project .ino
+3. Build and upload the project to your arduino board
+4. make connection between your Arduino board and PCF8591 module
+5. Input your a specific value in Serial monitor of Arduino IDE between 0.00 <value<5.00 ; for example 0.01 or 3.75
+6. You will see the voltage output on the pin __AOUT__ of PCF8591
 
 #### Arduino IDE users
 
